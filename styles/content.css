@@ -52,7 +52,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  .card__stars {
+  .card .stars {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
@@ -91,19 +91,19 @@
     background-color: #fff;
     color: #00acdc; }
 
-.star_item {
+.stars__item {
   width: 15px;
   height: 15px;
   background-image: url(../images/star.svg);
   background-repeat: no-repeat;
   background-position: center; }
-  .star_item:not(:last-child) {
+  .stars__item:not(:last-child) {
     margin-right: 4px; }
-  .stars--1 .star_item:nth-child(-n+1),
-  .stars--2 .star_item:nth-child(-n+2),
-  .stars--3 .star_item:nth-child(-n+3),
-  .stars--4 .star_item:nth-child(-n+4),
-  .stars--5 .star_item:nth-child(-n+5) {
+  .stars--1 .stars__item:nth-child(-n+1),
+  .stars--2 .stars__item:nth-child(-n+2),
+  .stars--3 .stars__item:nth-child(-n+3),
+  .stars--4 .stars__item:nth-child(-n+4),
+  .stars--5 .stars__item:nth-child(-n+5) {
     background-image: url(../images/star-active.svg); }
 
 /*# sourceMappingURL=content.css.map */
