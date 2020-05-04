@@ -3,8 +3,6 @@
   height: 40px; }
 
 .navigation {
-  background-color: #fff;
-  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,7 +12,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 60px;
   padding: 0 50px;
+  background-color: #fff;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); }
 
@@ -37,7 +37,9 @@
     text-decoration: none;
     color: #000;
     display: inline-block;
-    line-height: 60px; }
+    line-height: 60px;
+    -webkit-transition: color 0.3s ease;
+    transition: color 0.3s ease; }
   .menu__link:hover {
     color: #00acdc; }
 
@@ -48,12 +50,12 @@
 .is-active::after {
   content: "";
   position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
   height: 4px;
   background-color: #00acdc;
-  width: 100%;
-  border-radius: 8px;
-  bottom: 0;
-  right: 0; }
+  border-radius: 8px; }
 
 .row {
   display: -webkit-box;
@@ -75,9 +77,9 @@
           flex-direction: column;
   width: 200px;
   background-color: #fff;
+  padding: 30px 14px 14px;
   border: 1px solid #f3f3f3;
   border-radius: 5px;
-  padding: 30px 14px 14px;
   font-size: 11px;
   line-height: 13px; }
   .card__photo {
@@ -143,7 +145,9 @@
     text-align: center;
     font-size: 14px;
     line-height: 16px;
-    font-weight: 700; }
+    font-weight: 700;
+    -webkit-transition: color ease 0.5s, background-color ease 0.5s;
+    transition: color ease 0.5s, background-color ease 0.5s; }
   .card__buy-button:hover {
     background-color: #fff;
     color: #00acdc; }
@@ -156,10 +160,14 @@
   background-position: center; }
   .stars__item:not(:last-child) {
     margin-right: 4px; }
-  .stars--1 .stars__item:nth-child(-n+1),
-  .stars--2 .stars__item:nth-child(-n+2),
-  .stars--3 .stars__item:nth-child(-n+3),
-  .stars--4 .stars__item:nth-child(-n+4),
+  .stars--1 .stars__item:nth-child(-n+1) {
+    background-image: url(../images/star-active.svg); }
+  .stars--2 .stars__item:nth-child(-n+2) {
+    background-image: url(../images/star-active.svg); }
+  .stars--3 .stars__item:nth-child(-n+3) {
+    background-image: url(../images/star-active.svg); }
+  .stars--4 .stars__item:nth-child(-n+4) {
+    background-image: url(../images/star-active.svg); }
   .stars--5 .stars__item:nth-child(-n+5) {
     background-image: url(../images/star-active.svg); }
 
