@@ -1,9 +1,9 @@
 .grid {
   display: grid;
-  margin: 50px 0;
   grid-template-columns: repeat(auto-fit, 200px);
   grid-auto-rows: 403px;
   gap: 50px 48px;
+  margin: 50px 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
@@ -17,8 +17,8 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  background-color: #fff;
   padding: 30px 14px 14px;
+  background-color: #fff;
   border: 1px solid #f3f3f3;
   border-radius: 5px;
   font-size: 11px;
@@ -34,10 +34,10 @@
     margin-bottom: 15px; }
   .card__title {
     margin: 0;
+    height: 31px;
     font-weight: 500;
     font-size: 12px;
-    line-height: 15px;
-    height: 31px; }
+    line-height: 15px; }
   .card:not(:last-child) {
     margin-right: 48px; }
   .card__code {
@@ -57,7 +57,6 @@
     display: -ms-flexbox;
     display: flex; }
   .card__price {
-    margin: 20px 0 21px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -66,7 +65,8 @@
             justify-content: space-between;
     -webkit-box-align: end;
         -ms-flex-align: end;
-            align-items: flex-end; }
+            align-items: flex-end;
+    margin: 20px 0 21px; }
   .card__price-amount {
     font-weight: 700;
     font-size: 16px;
@@ -87,11 +87,13 @@
     font-size: 14px;
     line-height: 16px;
     font-weight: 700;
-    -webkit-transition: color ease 0.5s, background-color ease 0.5s;
-    transition: color ease 0.5s, background-color ease 0.5s; }
+    -webkit-transition: color ease 0.5s, background-color ease 0.5s, opacity ease 0.3s;
+    transition: color ease 0.5s, background-color ease 0.5s, opacity ease 0.3s; }
   .card__buy-button:hover {
     background-color: #fff;
     color: #00acdc; }
+  .card__buy-button:active {
+    color: red; }
 
 .stars__item {
   width: 15px;
