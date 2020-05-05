@@ -143,7 +143,7 @@
     border-radius: 5px;
     border: 1px solid #00acdc;
     background-color: #00acdc;
-    color: white;
+    color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
@@ -156,7 +156,7 @@
     background-color: #fff;
     color: #00acdc; }
   .card__buy-button:active {
-    color: red; }
+    color: #f00; }
 
 .stars__item {
   width: 15px;
