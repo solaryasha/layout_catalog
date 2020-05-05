@@ -34,26 +34,28 @@
     margin-right: 0; }
   .menu__link {
     text-decoration: none;
-    color: #000;
     display: inline-block;
     line-height: 60px;
-    -webkit-transition: color 0.3s ease;
-    transition: color 0.3s ease; }
+    color: #000;
+    -webkit-transition: color 0.2s ease;
+    transition: color 0.2s ease; }
+  .menu__link:visited {
+    color: #4b2f89; }
   .menu__link:hover {
     color: #00acdc; }
-
-.is-active {
-  color: #00acdb;
-  position: relative; }
-
-.is-active::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 4px;
-  background-color: #00acdc;
-  border-radius: 8px; }
+  .menu__link:link {
+    color: #000; }
+  .menu .is-active {
+    color: #00acdc;
+    position: relative; }
+  .menu .is-active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #00acdc;
+    border-radius: 8px; }
 
 /*# sourceMappingURL=header.css.map */
